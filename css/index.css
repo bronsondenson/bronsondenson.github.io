@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+*
+{
+margin: 0;
+padding: 0; 
+box-sizing: border-box; 
+font-family: 'Rubik', sans-serif;
+}
+
+body{
+height: 100vh;
+background-image: url('https://removal.ai/wp-content/uploads/2021/09/black-background-04-coolbackgrounds.png');
+background-size: cover; 
+background-position: center; 
+}
+
+li{
+list-style: none; 
+}
+
+a{
+text-decoration: none;
+color: #fff;
+font-size: 1rem;
+}
+
+a:hover {
+color: #4682B4;
+}
+
+/*---------------HEADER/NAVBAR-------------*/
+
+header{
+position: sticky; 
+margin: 0px;
+overflow: hidden;
+top: 0px;
+padding: 0 2rem;
+background: #454545;
+}
+
+.navbar {
+width: 100%;
+height: 60px;
+max-width: 1200px;
+margin: 0 auto; 
+display: flex;
+align-items: center; 
+justify-content: space-between; 
+}
+
+.navbar .links{
+display: flex; 
+gap: 2rem; 
+}
+
+.navbar .toggle_btn{
+color: #fff;
+font-size: 1.5rem;
+cursor: pointer;
+display: none;
+}
+
+.action_btn{
+background-color: #808080;
+color: #fff;
+padding: 0.5rem 1rem; 
+border: none; 
+outline: none;
+border-radius: 20px;
+font-size: 0.8rem;
+font-weight: bold;
+cursor: pointer;
+transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+scale: 1.05;
+color: #fff;
+}
+
+.action_btn:active{
+scale: 0.95;
+}
+
+/*--------------------MAIN------------------*/
+
+section#main{
+height: calc(100vh - 60px);
+display: flex;
+flex-direction: column;
+align-items: center; 
+justify-content: center; 
+text-align: center; 
+color: #B0C4DE;
+}
+
+#main h1{
+font-size: 4rem;
+margin-bottom: 1rem; 
+}
+
+/*----------------FEATURED GAMES----------*/
+
+.container{
+max-width: 1300px; 
+margin: auto;
+padding-left: 25px;
+padding-right: 25px; 
+}
+
+.row{
+display: flex;
+align-items: center; 
+flex-wrap: wrap; 
+justify-content: space-around;
+}
+
+.box-1{
+max-width: 2000px; 
+margin: auto; 
+padding-left: 25px;
+padding-right: 25px; 
+padding-right: 25px; 
+}
+
+.z-4{
+flex-basis: 25%;
+padding: 10px;
+min-width: 200px;
+margin-bottom: 50px;
+transition: transform 0.3s ease-in;
+}
+
+.z-4 img{
+width: 100%;
+}
+
+.z-4:hover{
+transform: scale(1.1);
+}
+
+.container h2{
+color: #B0C4DE;
+}
+
+.container h2{
+color: #B0C4DE;
+}
+
+
+/*------------------ELEMENT------------*/ 
+
+.element{
+padding-top: 100px;
+}
+
+.element .z-3{
+text-align: center; 
+padding: 40px 20px;  
+}
+
+.z-3 p{
+font-size: 14px; 
+margin: 12px 0; 
+color: #808080;
+}
+
+.element .z-3 h3{
+font-weight: 600; 
+color: #fff;
+font-size: 16px; 
+}
+
+.z-3{
+flex-basis: 30%;
+min-width: 250px; 
+margin-bottom: 30px;
+}
+
+.z-3 img{
+max-width: 800px;
+height: 300px;
+}
+
+.box{
+background: #3A3B3C;
+}
+
+/*-----------------FOOTER-------------*/
+
+.footer{
+background: #0C090A;
+color: #fff;
+
+font-size: 14px;
+padding: 60px 0 20px;
+}
+
+.footer p{
+color: #fff;
+}
+
+.footer h3{
+color: #fff;
+margin-bottom: 20px;
+}
+
+.footer-z-1 h3{
+padding-left: 10px;
+}
+
+.footer-z-1 p{
+padding-left: 10px;
+}
+
+.footer-z-2{
+flex: 1;
+text-align: center; 
+}
+
+.footer-z-2 img{
+width: 180px; 
+margin-bottom: 20px;
+}
+
+.footer-z-3, .footer-z-4{
+flex-basis: 12%;
+text-align: center; 
+}
+
+.copyright{
+text-align: left;
+padding-left: 10px; 
+padding-top: 30px; 
+}
+
+.footer-z-3 h3{
+padding-top: 25px;
+}
+
+.footer-z-3 li{
+padding-top: 10px;
+}
+
+/*-----------------DROPDOWN MENU-------------*/
+
+.dropdown_menu {
+position: left; 
+right: 2rem;
+top: 60px;
+width: 300px;
+height: 0;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+overflow: hidden;
+transition: height 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+height: 280px; 
+}
+
+.dropdown_menu li {
+padding: 0.7rem;
+display: flex; 
+align-items: center;
+justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+color: #fff; 
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+/*---------------BOTTOM TO TOP ICON-----------*/
+
+.btn-arrow{
+position: fixed;
+width: 50px; 
+height: 50px;
+bottom: 40px;
+right: 50px;  
+text-decoration: none;
+text-align: center; 
+line-height: 50px; 
+color: white;
+font-size: 22px;
+}
+
+/*-----------FOR MENU(mobile view)-----------*/
+
+@media (max-width: 992px) {
+.navbar .links,
+.navbar .action_btn{
+display: none;
+}
+
+.navbar .toggle_btn {
+display: block; 
+}
+
+.dropdown_menu {
+display: block;
+}
+
+@media (max-width: 576px) {
+.dropdown_menu {
+left: 2rem;
+width: unset;
+}

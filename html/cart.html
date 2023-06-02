@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+ <meta charset="UTF=8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width,
+  inital-scale="1.0">
+ <link rel="stylesheet" href="style.css">
+ <link rel="tab icon" href="images/game.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+ rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+ 
+   <!-----------NAV BAR---------->
+   <title> Game Cave | Console Shop </title>
+</head>
+<body>
+<header>
+
+   <div class="navbar">
+	 <ul class="links">
+	 <li><a href="index.html">HOME</a></li>
+	 <li><a href="products-xbox.html">XBOX</a></li>
+	 <li><a href="products-ps5.html">PS5</a></li>
+	 <li><a href="products-ps4.html">PS4</a></li>
+	 <li><a href="products-nsw.html">NSW</a></li>
+	 <li><a href="cart.html">CART</a></li>
+	 </ul>  
+	 <a href="products.html" class="action_btn">Shop Now</a>
+	 <div class="toggle_btn">
+	 <i class="fa-solid fa-bars"></i>
+	  </div>
+ </div>
+	  <div class="dropdown_menu">
+	  <li><a href="index.html">HOME</a></li>
+	  <li><a href="products-xbox.html">XBOX</a></li>
+	  <li><a href="products-ps5.html">PS5</a></li>
+	  <li><a href="products-ps4.html">PS4</a></li>
+	  <li><a href="products-nsw.html">NSW</a></li>
+	  <li><a href="cart.html">CART</a></li>
+	  <a href="products.html" class="action_btn">Shop Now</a>
+  </div>
+</header>
+
+ <!-----BOTTOM TO TOP ICON----->
+   <a class="btn-arrow" href="">
+   <i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+   
+   <script>
+	const toggleBtn = document.querySelector('.toggle_btn')
+	const toggleBtnIcon = document.querySelector('.toggle_btn i')
+	const dropDownMenu = document.querySelector('.dropdown_menu')
+	
+	toggleBtn.onclick = function () {
+	dropDownMenu.classList.toggle('open')
+	const isOpen = dropDownMenu.classList.contains('open')
+	
+	toggleBtnIcon.classList = isOpen
+	? 'fa-solid fa-xmark'
+	: 'fa-solid fa-bars'
+	}
+	</script>
+
+   <!----- cart item details ------>
+     <div class="small-container cart-page"> 
+	  
+	  <table>
+		  <tr>
+		    <th> Product </th>
+			<th> Quantity </th>
+			<th> Amount </th>
+	      </tr>
+		  
+		  <tr> 
+		   <td> 
+		    <div class="cart-info">
+			 <img src="images/xbox one.png">
+			  <div>
+			   <p> Xbox One </p>
+			    <small>Price: P9,190.00</small>
+				<br>
+				<a href=""> Remove </a>
+			</div> 
+		 </div>
+			</td>	
+			<td><input type="number" value"1"></td>
+			<td> P9,190.00 </td>
+		  </tr>
+		   <tr> 
+		   <td> 
+		    <div class="cart-info">
+			 <img src="images/redfall.png">
+			  <div>
+			   <p> Redfall </p>
+			    <small>Price: P2,899.00</small>
+				<br>
+				<a href=""> Remove </a>
+			</div> 
+		 </div>
+			</td>	
+			<td><input type="number" value"1"></td>
+			<td> P2,899.00 </td>
+		  </tr>
+		  
+		   <tr> 
+		   <td> 
+		    <div class="cart-info">
+			 <img src="images/db.png">
+			  <div>
+			   <p> Diablo IV </p>
+			    <small>Price: P2,399.00</small>
+				<br>
+				<a href=""> Remove </a>
+			</div> 
+		 </div>
+			</td>	
+			<td><input type="number" value"1"></td>
+			<td id="count"> P2,399.00 </td>
+		  </tr>
+      </table>	
+	  
+         <div class="total-price">
+		<table>
+  			 <tr>
+			   <td> Total </td>
+			   <td id="total"> P14,488.00 </td>
+			   <tr>
+			   <td><a href="">CHECK OUT </a></td>
+			 </tr>
+		</table>
+      </div>				 
+   </div>
+</div>
+
+	  <!----------FOOTER----------->
+	  <div class="footer">
+	  <div class="container">
+	  <div class="footer-z-1">
+	    <h3> Visit our Website! </h3>
+		<p> Your everyday game store. </p>
+		</div>
+		
+		<div class="footer-z-2">
+		 <p> 100% All Brand New & Original. 
+		 Shop with confidence! </p>
+		 </div>
+		 
+		 <div class="footer-z-3">
+		  <h3> Gaming </h3>
+		  <ul>
+		  <li> Nintendo Switch </li>
+		  <li> Playstation 5 </li>
+		  <li> Playstation 4 </li>
+		  <li> Xbox Series X </li>
+		  <li> Xbox One </li>
+		  </ul>
+		 </div>
+	  </div>
+   <p class="copyright"> @2023 by GameCave. - All Rights Reserved </p>
+	 </div>
+   </div>
+ </div>
+ 
+</body> 
+</html>

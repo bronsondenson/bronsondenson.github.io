@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+ <meta charset="UTF=8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width,
+  inital-scale="1.0">
+ <link rel="stylesheet" href="style.css">
+ <link rel="tab icon" href="images/game.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+ rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+ 
+   <!-----------NAV BAR---------->
+   <title> Game Cave | Console Shop </title>
+</head>
+<body>
+<header>
+   <div class="navbar">
+	  <ul class="links">
+	  <li><a href="index.html">HOME</a></li>
+	  <li><a href="products-xbox.html">XBOX</a></li>
+	  <li><a href="products-ps5.html">PS5</a></li>
+	  <li><a href="products-ps4.html">PS4</a></li>
+	  <li><a href="products-nsw.html">NSW</a></li>
+	  <li><a href="cart.html">CART</a></li>
+	  </ul>
+	 <a href="products.html" class="action_btn">Shop Now</a>
+	 <div class="toggle_btn">
+	 <i class="fa-solid fa-bars"></i>
+	  </div>
+ </div>
+	  <div class="dropdown_menu">
+	  <li><a href="index.html">HOME</a></li>
+	  <li><a href="products-xbox.html">XBOX</a></li>
+	  <li><a href="products-ps5.html">PS5</a></li>
+	  <li><a href="products-ps4.html">PS4</a></li>
+	  <li><a href="products-nsw.html">NSW</a></li>
+	  <li><a href="cart.html">CART</a></li>
+	  <a href="products.html" class="action_btn">Shop Now</a>
+  </div>
+</header>
+		
+		<!------------PS4----------->
+<div class="function">
+	  <div class="row row-2">
+	   <h2> PS4 </h2>
+		</div>
+		
+	   <div class="row">
+		 <div class="col-4">
+		 <a href="products-spiderman.html">
+	    <img src="images/marvel.png"> </a> 
+			  <h4> Marvel's Spider-Man </h4>
+			  <p> ₱1,990.00 </p>
+			  </div>
+			  
+			    <div class="col-4">
+		 <a href="products-takes.html">
+        <img src="images/it.png"> </a>
+			  <h4> It takes two </h4>
+			  <p> ₱3,580.00 </p>
+			  </div>
+			  
+			    <div class="col-4">
+		<a href="products-last2.html">
+		<img src="images/l.png"> </a>
+			  <h4> The Last Of Us II </h4>
+			  <p> ₱3,390.00 </p>
+			  </div>
+			  
+			    <div class="col-4">
+		<a href="products-fifa.html">
+		<img src="images/mb.png"> </a> 
+			  <h4> Fifa 22 </h4>
+			  <p> ₱2,799.00 </p>
+			  </div>
+			  
+			  	    <div class="col-4">
+		<a href="products-fc5.html">
+		<img src="images/fc.png"> </a>
+			  <h4> Far Cry 5 </h4>
+			  <p> ₱3,649.00 </p>
+			  </div>
+			  
+			  	    <div class="col-4">
+		<a href="products-madden.html">
+		<img src="images/mad.png"> </a> 
+			  <h4> Madden NFL 23 </h4>
+			  <p> ₱2,190.00 </p>
+			  </div>
+			  
+			  	    <div class="col-4">
+		<a href="products-ds.html">
+		<img src="images/ds.png"> </a> 
+			  <h4> Death Stranding </h4>
+			  <p> ₱1,499.00 </p>
+			  </div>
+			  
+			  	    <div class="col-4">
+		 <a href="products-u4.html">
+		<img src="images/uc.png"> </a> 
+			  <h4> Uncharted 4 </h4>
+			  <p> ₱1,195.00 </p>
+			  </div>
+         </div>	   
+    </div>
+	   
+	   
+ 
+     <!-----BOTTOM TO TOP ICON----->
+   <a class="btn-arrow" href="">
+   <i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+  
+
+<script>
+	const toggleBtn = document.querySelector('.toggle_btn')
+	const toggleBtnIcon = document.querySelector('.toggle_btn i')
+	const dropDownMenu = document.querySelector('.dropdown_menu')
+	
+	toggleBtn.onclick = function () {
+	dropDownMenu.classList.toggle('open')
+	const isOpen = dropDownMenu.classList.contains('open')
+	
+	toggleBtnIcon.classList = isOpen
+	? 'fa-solid fa-xmark'
+	: 'fa-solid fa-bars'
+	}
+	</script>
+	
+       <!----------FOOTER----------->
+	  <div class="footer">
+	  <div class="box">
+	  <div class="footer-z-1">
+	    <h3> Visit our Website! </h3>
+		<p> Your everyday game store. </p>
+		</div>
+		
+		<div class="footer-z-2">
+		 <p> 100% All Brand New & Original. 
+		 Shop with confidence! </p>
+		 </div>
+		 
+		 <div class="footer-z-3">
+		  <h3> Gaming </h3>
+		  <ul>
+		  <li> Nintendo Switch </li>
+		  <li> Playstation 5 </li>
+		  <li> Playstation 4 </li>
+		  <li> Xbox Series X </li>
+		  <li> Xbox One </li>
+		  </ul>
+		 </div>
+	  </div>
+   <p class="copyright"> @2023 by GameCave. - All Rights Reserved </p>
+	 </div>
+   </div>
+ </div>
+ 
+</body>
+</html>

@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+*
+{
+margin: 0;
+padding: 0; 
+box-sizing: border-box; 
+font-family: 'Rubik', sans-serif;
+}
+
+body{
+height: 100vh;
+background-size: cover; 
+background-position: center; 
+}
+
+li{
+list-style: none; 
+}
+
+a{
+text-decoration: none;
+color: #fff;
+font-size: 1rem;
+}
+
+a:hover {
+color: #4682B4;
+}
+
+/*------------HEADER/NAVBAR-------------*/
+
+header{
+position: sticky; 
+margin: 0px;
+overflow: hidden;
+top: 0px;
+padding: 0 2rem;
+background: #000;
+}
+
+.navbar {
+width: 100%;
+height: 60px;
+max-width: 1200px;
+margin: 0 auto; 
+display: flex;
+align-items: center; 
+justify-content: space-between; 
+}
+
+.navbar .links{
+display: flex; 
+gap: 2rem; 
+}
+
+.navbar .toggle_btn{
+color: #fff;
+font-size: 1.5rem;
+cursor: pointer;
+display: none;
+}
+
+.action_btn{
+background-color: #808080;
+color: #fff;
+padding: 0.5rem 1rem; 
+border: none; 
+outline: none;
+border-radius: 20px;
+font-size: 0.8rem;
+font-weight: bold;
+cursor: pointer;
+transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+scale: 1.05;
+color: #fff;
+}
+
+.action_btn:active{
+scale: 0.95;
+}
+
+/*----------------CONSOLES------------*/
+
+.row{
+display: flex;
+align-items: center; 
+flex-wrap: wrap; 
+justify-content: space-around;
+}
+
+.function{
+max-width: 2000px; 
+margin: auto; 
+padding-left: 25px;
+padding-right: 25px; 
+padding-right: 25px; 
+}
+
+.z-5{
+flex-basis: 25%;
+padding: 10px;
+min-width: 200px;
+margin-bottom: 50px;
+transition: transform 0.5s;
+}
+
+.function h2{
+color: #454545;
+}
+
+h2{
+color: #000;
+padding-left: 25px;
+}
+
+.z-5 img{
+width: 100%;
+box-shadow: -1px 0 10px #000;
+display: flex;
+}
+
+.function{
+text-align: center;
+position: relative; 
+line-height: 70px; 
+color: #000; 
+}
+
+h3{
+color: #000;
+font-weight: bold;
+}
+
+.z-5 p1{
+font-size: 14px; 
+color: #000;
+}
+
+.z-5:hover{
+transform: translateY(-5px)
+}
+
+.row-2{
+justify-content: space-between;
+margin: 100px auto 50px;
+}
+
+select{
+border: 1px solid #000;
+padding: 5px;
+}
+
+select: focus{
+outline: none'
+}
+
+.page-btn{
+margin: 0 auto 80px;
+}
+
+.page-btn span{
+display: inline-block;
+border: 1px solid #357EC7;
+margin-left: 10px; 
+width: 40px;
+height: 40px; 
+text-align: center; 
+line-height: 40px;
+cursor: pointer;
+}
+
+.page-btn span:hover{
+background: #000;
+color: #fff;
+}
+
+.btn {
+background: #000;
+padding: 5px;
+border-radius: 50px;
+font-size: 14px;
+}
+
+/*-----------------FOOTER-------------*/
+
+.footer{
+background: #0C090A;
+color: #fff;
+
+font-size: 14px;
+padding: 60px 0 20px;
+}
+
+.footer p{
+color: #fff;
+}
+
+.footer h3{
+color: #fff;
+margin-bottom: 20px;
+}
+
+.footer-z-1 h3{
+padding-left: 35px;
+}
+
+.footer-z-1 p{
+padding-left: 35px;
+}
+
+.footer-z-2{
+flex: 1;
+text-align: center; 
+}
+
+.footer-z-2 img{
+width: 180px; 
+margin-bottom: 20px;
+}
+
+.footer-z-3, .footer-z-4{
+flex-basis: 12%;
+text-align: center; 
+}
+
+.copyright{
+text-align: left;
+padding-left: 10px;
+padding-top: 30px;
+}
+
+.footer-z-3 h3{
+padding-top: 25px;
+}
+
+.footer-z-3 li{
+padding-top: 10px;
+}
+
+/*------------------DROPDOWN MENU-------------*/
+
+.dropdown_menu {
+position: left; 
+right: 2rem;
+top: 60px;
+width: 300px;
+height: 0;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+overflow: hidden;
+transition: height 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+height: 280px; 
+}
+
+.dropdown_menu li {
+padding: 0.7rem;
+display: flex; 
+align-items: center;
+justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+color: #fff; 
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+/*---------------BOTTOM TO TOP ICON-----------*/
+
+.btn-arrow{
+position: fixed;
+width: 50px; 
+height: 50px;
+bottom: 40px;
+right: 50px;  
+text-decoration: none;
+text-align: center; 
+line-height: 50px; 
+color: white;
+font-size: 22px;
+}
+
+
+/*-------------FOR MENU(mobile view)-----------*/
+
+@media (max-width: 992px) {
+.navbar .links,
+.navbar .action_btn{
+display: none;
+}
+
+.navbar .toggle_btn {
+display: block; 
+}
+
+.dropdown_menu {
+display: block;
+}
+
+@media (max-width: 576px) {
+.dropdown_menu {
+left: 2rem;
+width: unset;
+}
